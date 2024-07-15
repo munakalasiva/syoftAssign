@@ -1,0 +1,143 @@
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 30px;
+}
+
+.signup-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.signup-container button[type="submit"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.signup-container button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.navigation {
+  display: flex;
+}
+
+.signup-container button {
+  color: blue;
+  background-color: white;
+  border: none;
+}
+
+.img {
+  height: 400px;
+  width: 500px;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .container {
+      flex-direction: column;
+      margin: 20px;
+      padding: 20px;
+  }
+
+  .img {
+      height: 300px;
+      width: 100%;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .main-container {
+      flex-direction: column;
+      margin-top: 20px;
+  }
+
+  .container {
+      margin: 10px;
+      padding: 10px;
+  }
+
+  .signup-container {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .signup-container input {
+      margin-bottom: 5px;
+      padding: 8px;
+  }
+
+  .signup-container button[type="submit"] {
+      padding: 8px;
+  }
+
+  .img {
+      height: 200px;
+      width: 100%;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .main-container {
+      margin-top: 10px;
+  }
+
+  .container {
+      margin: 5px;
+      padding: 5px;
+  }
+
+  .signup-container {
+      padding: 5px;
+  }
+
+  .signup-container input {
+      margin-bottom: 5px;
+      padding: 5px;
+  }
+
+  .signup-container button[type="submit"] {
+      padding: 5px;
+  }
+
+  .img {
+      height: 150px;
+      width: 100%;
+  }
+}
+
+  
+
+  

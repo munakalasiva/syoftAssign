@@ -1,0 +1,159 @@
+/* Base styles for all devices */
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-color: #f0f2f5;
+  padding: 30px;
+}
+
+.user-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  height: 60vh;
+}
+
+.user-avatar {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  text-align: left;
+}
+
+.user-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.user-info strong {
+  color: #555;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+.card {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #4A4D4A;
+  height: 60vh;
+  width: 35vw;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .dashboard-container {
+      flex-direction: column;
+      padding: 20px;
+      height:auto;
+  }
+
+  .user-card {
+      width: 80%;
+      height: auto;
+  }
+
+  .user-avatar {
+      height: 150px;
+      width: 150px;
+  }
+
+  .cards {
+      width: 100%;
+      height: auto;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .dashboard-container {
+      flex-direction: column;
+      padding: 15px;
+      height:auto;
+  }
+
+  .user-card {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+  }
+
+  .user-avatar {
+      height: 120px;
+      width: 120px;
+  }
+
+  .cards {
+      width: 100%;
+      height: auto;
+  }
+
+  
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .dashboard-container {
+      flex-direction: column;
+      height:auto;
+      padding: 10px;
+     
+  }
+
+  .user-card {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      
+  }
+
+  .user-avatar {
+      height: 100px;
+      width: 100px;
+  }
+
+  .cards {
+      width: 100%;
+      height: auto;
+  }
+
+ 
+}
+
+  
